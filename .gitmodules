@@ -1,3 +1,9 @@
 [submodule "githubs/dotfiles"]
 	path = githubs/dotfiles
 	url = git@github.com:gtback/dotfiles.git
+[submodule "githubs/wordfreq"]
+	path = githubs/wordfreq
+	url = git@github.com:gtback/wordfreq.git
+[submodule "githubs/rlundo"]
+	path = githubs/rlundo
+	url = git@github.com:thomasballinger/rlundo
