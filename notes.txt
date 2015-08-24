@@ -1,0 +1,152 @@
+SATURDAY
+
+
+Greg Back - Best Practices for Python Scripting
+    - Went way too fast to code during talk, listened and asked about some setup stuff
+
+    - github.com/gtback/wordfreq
+        illustration of best practices with simple app
+
+    - github.com/gtback/dotfiles
+        .pythonstartup - has mods to save python REPL to file
+
+    - Tip: make sure you actually exit your python script being run as main with main's return:
+        import sys
+
+        if __name__ == '__main__':
+            sys.exit(main())
+
+
+Eric Floehr - Art and Science With Six Million Timelapse Images and Python
+    - Setup RasPi to take pictures every 10sec and write to NAS
+    - Coded management system for images, and conducted analysis and visualization experiments
+    - Made stacked images from given time regions, to get brightest zones at night, or darkest at day
+    - Made movies in varying ways, played tricks with rendering time change with images
+    - Has ~3yrs images, on 3rd camera (cheap canon ebay $10) filesize gets big on fail
+    - 6TB of images, from West pointing camera
+
+    - github.com/efloehr/timelapse
+
+
+Al Sweigart - Automating Your Browser and Desktop Apps
+    - Wrote book: Automate the Boring Stuff, released under CC license
+        Also wrote invent with python, and teaches pygame stuff!!
+    - He's from SF
+    - bit.ly/automatetalk - downloaded powerpoint presentation
+    - Tools used:
+        selenium - automate web browser
+        pyautogui - automate mouse / keyboard, all platforms, 2 and 3
+
+
+Allison Lacker - How I learned Python while working at Eventbrite
+    - Gave general tips and back story.
+    - Suggested keeping how-to doc
+    - Keep two lists tracking what you have learned and things to learn later
+    - Communicate your desire for learning to your superiors
+
+
+Michael Becker - Data Science: It's Easy as Py!
+    - Talked about language classification example with scikit-learn
+    - Fell half-asleep due to time of day
+    - Mentioned seaborn for making matplotlib plots prettier
+    - Used pandas DataFrame and Sequences for data processing,
+      they're like 2D indexed dict, and indexed dict respectively
+    - git@github.com:mwaskom/seaborn.git
+
+
+Greg Baugues - How I taught my dog to text me selfies
+    - Used Arduino Yun to bridge button press to twilio texting service
+    - Twilio sells phone numbers for $1/month, $0.003/sms  $0.02/mms
+    - Ask Greg for $20 dev credit
+    - After videos are up, send to Bob Koester
+
+
+Jack Diederich - Name Things Once
+
+
+Jeff Roche - A Calendar for Mars
+
+Lightning Talks:
+sqlalchemy - chinook dataset, automap feature figures out data without meta, made ORM's and could query
+
+pyenv - cd into venv and activates
+
+flask mega tutorial, lynda bootstrap, backbone.js
+
+lunchbox - from NPR, makes postable images with python, webapp
+
+open source meme generator: memegen.link/iw/topline/bottomline/
+made with flask api root shows you templates
+uses pillow for images
+templates on github, add some with pull requests
+
+pyvideo.org, python pocket guide, teaching correct way to google / stackexchange
+don't paste local vars / whole lines
+
+center for open science
+cos.io/integrationgrants
+osf.io/waterbutler
+jeff@cos.io
+
+rlwrap gives an interpreter that doesn't support readline keyboard shortcuts them
+rlundo - gives you undo in the REPL, does by forking processes and keeps state that way
+try pstree 1115 to see nice illustration
+git clone git@github.com:thomasballinger/rlundo.git
+
+raspi data logging without ruining flash - use redis, redislite
+
+
+
+
+SUNDAY
+
+
+K Lars Lohn - The Well Tempered API
+    - 40 yr career in sw eng
+    - Works at Mozilla, on Firefox, Herd guy
+    - Played music and talked about abstraction in SW
+    - Dependency injection (generalizing what modules were used in situations, not hard coding)
+    - Cooperative multitasking (interlacing notes from two threads in time on one processor) - Timesharing...
+    - CrashStorage - fetsh, transform, save model, and lego bricks of different systems being connected
+    - 400 yr old music is open source, refactor-able
+    - He also uses Kinesis keyboard and foot pedals
+
+
+Dave Forgac - Python Packaging from Init to Deploy
+    - daveops.com/pyohio
+    - dave@forgac.com
+    - Works for American Greetings in CLE
+        - Use devpi as in house copy / proprietary  PyPI
+        - Use jenkins vs. travis for CI testing
+        - Use Atlassian stash vs. github for project repos
+    - Cookiecutter via pip install cookiecutter allows you to clone an
+      existing github repo as template of a package, and makes all necessary files
+    - Guy mentioned fpm for making deb / rpm packages
+
+
+Jamiel Almeida - Typing better and potentially faster with python
+    - Talked about Dvorak keyboard layout, and recreated his analysis process in python
+    git clone git@github.com:slashfoo/cookey.git
+    - Showed keyboard he uses: Kinesis Advantage
+        - Asked Troy if I could buy for work
+
+Gary Hlusko - Python for Economists: An overview of Python tools for Economists
+    - Met at hostel, he is non-CS, dabbling with tools outside of norms for economists
+
+Tom Ballinger - REPL-driven development
+    - Works for Recurse something school (name changed from hacking school in NYC)
+    - Quitting soonish, to do ?
+    - Very energetic and good talker
+    - Did lightning talk on rlundo
+    - Plugged bpython a lot, b/c he contributed to it a lot
+    - Used tmux on mac for demo, and played live demo videos, ascii vision? forget what recording sw mentioned
+    - Talked about using bpython to help learn lang and libs, and to teach tab-completion
+    - followed on github for rlundo
+
+Joseph Mosby - Production Django
+    - Works in DC for National Journal (congress mag)
+    - Talked about pitfalls of going to production with django
+    - Build system with scalability in mind. Easier to have capability from start,
+      load balancer two servers... than to have to put in when you start needing
+    - Minimize access to users, and especially to devs. If you get hacked, their accounts can wipe out install.
+    - Got bored at end of day / needed food, left talk early..
