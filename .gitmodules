@@ -7,3 +7,27 @@
 [submodule "githubs/rlundo"]
 	path = githubs/rlundo
 	url = git@github.com:thomasballinger/rlundo
+[submodule "githubs/cookey"]
+	path = githubs/cookey
+	url = git@github.com:slashfoo/cookey.git
+[submodule "githubs/osf.io"]
+	path = githubs/osf.io
+	url = git@github.com:CenterForOpenScience/osf.io
+[submodule "githubs/pyautogui"]
+	path = githubs/pyautogui
+	url = git@github.com:asweigart/pyautogui.git
+[submodule "githubs/pyenv"]
+	path = githubs/pyenv
+	url = git@github.com:yyuu/pyenv
+[submodule "githubs/redislite"]
+	path = githubs/redislite
+	url = git@github.com:yahoo/redislite
+[submodule "githubs/selenium"]
+	path = githubs/selenium
+	url = git@github.com:SeleniumHQ/selenium.git
+[submodule "githubs/skll"]
+	path = githubs/skll
+	url = git@github.com:EducationalTestingService/skll
+[submodule "githubs/timelapse"]
+	path = githubs/timelapse
+	url = git@github.com:efloehr/timelapse.git
